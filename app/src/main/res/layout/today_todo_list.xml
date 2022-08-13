@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TodoTextView"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        tools:text="todo" />
+
+
+    <TextView
+        android:id="@+id/commandTextView"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/TodoTextView"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        tools:text="command" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commandTextView"
+        android:text="Add new" />
+
+
+</RelativeLayout>
